@@ -1,5 +1,5 @@
 (function() {
-    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=David Guetta", {
+    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=David Guetta&limit=8", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",

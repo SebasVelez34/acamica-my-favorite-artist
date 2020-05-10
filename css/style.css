@@ -1,28 +1,42 @@
 /* Base */
-body {
-	line-height: 1.7;
-	color: #4d4d4d;
-	font-weight: 400;
-	font-size: 1rem;
-	font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-	font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-	margin: 0;
-	background: linear-gradient(to right, #b03051, #302b63, #a03054);
-}
+	body {
+		line-height: 1.7;
+		color: #4d4d4d;
+		font-weight: 400;
+		font-size: 1rem;
+		font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+		margin: 0;
+		background: #001319;
+	}
 
-h1{
-	font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+	h1{
+		font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	}
 
-header {
-	width: 100%;
-	height: 90vh;
-	display: inline-block;
-}
+	h2 {
+		font-family: 'Permanent Marker', cursive;
+		color: white;
+		font-size: 30px;
+	}
+
+	header {
+		width: 100%;
+		height: 90vh;
+		display: inline-block;
+	}
+
+	audio {
+		width: 300px;
+		height: 31px;
+		margin-top: 5%;
+	}
+/* Base */
 .header-bg{
 	width: 50%;
-	height: 99vh;
-	background: url('../images/hero_bg_2.jpg') bottom;
+	height: 98vh;
+	background: url('../images/david_guetta7.jpg') bottom;
+	background-size: cover;
 	display: inline-block;
 }
 
@@ -38,7 +52,7 @@ header {
 
 #container-title{
 	background: #0f0c29;  /* fallback for old browsers */
-	background: linear-gradient(to right, #b03051, #302b63, #a03054);
+	background: linear-gradient(to right, #e20d44, #040404, #00000000);
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	width: 100%;
@@ -61,6 +75,33 @@ header {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+#discography {
+	left: calc(50vw - 70%);
+}
+
+.container-artist {
+	position: absolute;
+	top: calc(100vh - 85%);
+	margin: 5%;
+	margin-top: 0;
+}
+
+.container-cards {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container-info h1{
+	font-size: 2rem;
+}
+#web-oficial {
+	background:url('../images/david_guetta7.jpg') center;
+	width: 100%;
+	background-size: cover;
+}
+/* Card */
 .card {
 	background: #fff;
 	border-radius: 2px;
@@ -71,18 +112,12 @@ header {
 	width: 300px;
 }
 
-.container-cards {
-	position: absolute;
-	top: 50%;
-}
-
-#container-info {
-	position: absolute;
-	top: 20%;
-}
-
-#container-info h1{
-	font-size: 2rem;
+.card-2 {
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	position: relative;
+	padding: 20px;
 }
 
 .card-header {
@@ -105,4 +140,64 @@ header {
     color: white;
     font-weight: bold;
     text-align: center;
+}
+/* Card */
+
+
+/* Media query */
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+}
+  
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+}
+  
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.header-info {
+		width: 100%;
+	}
+}
+  
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.header-info {
+		width: 100%;
+	}
+	#container-title h1 {
+		font-size: 2.5rem;
+	}
+	.header-bg {
+		width: 100%;
+		display: block;
+		background: url('../images/david_guetta7.jpg') bottom;
+		background-size: cover;
+	}
+	#container-title {
+		position: fixed;
+	}
 }
